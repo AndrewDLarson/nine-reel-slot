@@ -2,7 +2,14 @@ const spinButton = document.getElementById("spin");
 const reelOne = document.getElementById("reelOne");
 const reelTwo = document.getElementById("reelTwo");
 const reelThree = document.getElementById("reelThree");
-const outcome = document.getElementById("outcome");
+const reelFour = document.getElementById("reelFour");
+const reelFive = document.getElementById("reelFive");
+const reelSix = document.getElementById("reelSix");
+const reelSeven = document.getElementById("reelSeven");
+const reelEight = document.getElementById("reelEight");
+const reelNine = document.getElementById("reelNine");
+
+const outcome = document.getElementById("outcome"); 
 const creditsBlock = document.getElementById("credits");
 let credits = 10;
 creditsBlock.innerHTML = `${credits}`
@@ -44,10 +51,17 @@ const spinReel = () => {
 }
 
 spinButton.onclick = function() {
-    //test below
     let win = 0;
+    reelOne.style.border = "1px solid black";
+    reelTwo.style.border = "1px solid black";
+    reelThree.style.border = "1px solid black";
+    reelFour.style.border = "1px solid black";
+    reelFive.style.border = "1px solid black";
+    reelSix.style.border = "1px solid black";
+    reelSeven.style.border = "1px solid black";
+    reelEight.style.border = "1px solid black";
+    reelNine.style.border = "1px solid black";
     const winnings = (slotOne, slotTwo, slotThree) => {
-        
         if (slotOne === slotTwo && slotTwo === slotThree) {
             switch (slotOne) {
                 case "andy":
@@ -63,8 +77,7 @@ spinButton.onclick = function() {
                     credits += 50;
                     break;
                 case "new baby":
-                    //document.getElementById("outcome").innerHTML = "New Baby Name"  .......uncomment this for baby gender name
-                    win += 50; // comment this out for baby gender name
+                    win += 50; 
                     credits += 50;
                     break;
                 case "nala":
@@ -80,23 +93,11 @@ spinButton.onclick = function() {
                     credits += 20;
                     break;
             }
-            //document.getElementById("outcome").innerHTML = `YOU WIN ${win}!!!`; //comment this out for baby gender game
-        }/* else if (slotOne === "pizza") {
-            if (slotOne === "pizza") {
-                win += 2;
-                credits += 2;
-            };
-            if (slotTwo === "pizza" && slotOne === "pizza") {
-                win += 2;
-                credits += 2;
-            };
-            document.getElementById("outcome").innerHTML = `YOU WIN ${win}!!!`
-        }*/ else {
+        } else {
             document.getElementById("outcome").innerHTML = "Try Again"
         };
     };    
-       
- // test above    
+         
     credits -= 1;
     const reelOneOutcome = spinReel();
     const reelTwoOutcome = spinReel();
@@ -499,8 +500,8 @@ spinButton.onclick = function() {
                 document.getElementById("kellyPic").style.width = "100%";
                 break;*/
         };
-                //everything under this to the next point is test
-     //
+           
+     
         winnings(reelOneOutcome, reelTwoOutcome, reelThreeOutcome);
         winnings(reelFourOutcome, reelFiveOutcome, reelSixOutcome);
         winnings(reelSevenOutcome, reelEightOutcome, reelNineOutcome);
@@ -518,108 +519,45 @@ spinButton.onclick = function() {
     } else {
         document.getElementById("outcome").innerHTML = `No More Credits.`;
     }
-}; //
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            // everything above this is test.
-
-    /*    if (reelOneOutcome === reelTwoOutcome && reelTwoOutcome === reelThreeOutcome) {
-            switch (reelOneOutcome) {
-                case "andy":
-                    win += 100;
-                    credits += 100;
-                    break;
-                case "kelly":
-                    win += 75;
-                    credits += 75;
-                    break;
-                case "ryder":
-                    win += 50;
-                    credits += 50;
-                    break;
-                case "new baby":
-                    //document.getElementById("outcome").innerHTML = "New Baby Name"  .......uncomment this for baby gender name
-                    win += 50; // comment this out for baby gender name
-                    credits += 50;
-                    break;
-                case "nala":
-                    win += 25;
-                    credits += 25;
-                    break;
-                case "mufasa":
-                    win += 25;
-                    credits += 25;
-                    break;
-                case "pizza":
-                    win += 20;
-                    credits += 20;
-                    break;
-            }
-            document.getElementById("outcome").innerHTML = `YOU WIN ${win}!!!` //comment this out for baby gender game
-        } else if (reelOneOutcome === "pizza") {
-            if (reelOneOutcome === "pizza") {
-                win += 2;
-                credits += 2;
-            };
-            if (reelTwoOutcome === "pizza" && reelOneOutcome === "pizza") {
-                win += 2;
-                credits += 2;
-            };
-            document.getElementById("outcome").innerHTML = `YOU WIN ${win}!!!`
-        } else {
-            document.getElementById("outcome").innerHTML = "Try Again"
-        };
-        creditsBlock.innerHTML = `${credits}`
-    }
-    else {
-        document.getElementById("outcome").innerHTML = "No more Credits.";
-    };
-}*/
+   // styling for winnings should go here
+   if (reelOneOutcome === reelTwoOutcome && reelTwoOutcome === reelThreeOutcome) {
+    reelOne.style.border = "10px solid red";
+    reelTwo.style.border = "10px solid red";
+    reelThree.style.border = "10px solid red";
+   };
+   if (reelFourOutcome === reelFiveOutcome && reelFiveOutcome === reelSixOutcome) {
+    reelFour.style.border = "10px solid red";
+    reelFive.style.border = "10px solid red";
+    reelSix.style.border = "10px solid red";
+   };
+   if (reelSevenOutcome === reelEightOutcome && reelEightOutcome === reelNineOutcome) {
+    reelSeven.style.border = "10px solid red";
+    reelEight.style.border = "10px solid red";
+    reelNine.style.border = "10px solid red";
+   };
+   if (reelOneOutcome === reelFourOutcome && reelFourOutcome === reelSevenOutcome) {
+    reelOne.style.border = "10px solid red";
+    reelFour.style.border = "10px solid red";
+    reelSeven.style.border = "10px solid red";
+   };
+   if (reelTwoOutcome === reelFiveOutcome && reelFiveOutcome === reelEightOutcome) {
+    reelTwo.style.border = "10px solid red";
+    reelFive.style.border = "10px solid red";
+    reelEight.style.border = "10px solid red";
+   };
+   if (reelThreeOutcome === reelSixOutcome && reelSixOutcome === reelNineOutcome) {
+    reelThree.style.border = "10px solid red";
+    reelSix.style.border = "10px solid red";
+    reelNine.style.border = "10px solid red";
+   };
+   if (reelOneOutcome === reelFiveOutcome && reelFiveOutcome === reelNineOutcome) {
+    reelOne.style.border = "10px solid red";
+    reelFive.style.border = "10px solid red";
+    reelNine.style.border = "10px solid red";
+   };
+   if (reelThreeOutcome === reelFiveOutcome && reelFiveOutcome === reelSevenOutcome) {
+    reelThree.style.border = "10px solid red";
+    reelFive.style.border = "10px solid red";
+    reelSeven.style.border = "10px solid red";
+   };
+}; 
