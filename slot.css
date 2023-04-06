@@ -71,7 +71,7 @@ main {
 }
 
 #spin-container {
-    width: 100%;
+    width: 50%;
     height: 110px;
     grid-column:3;
     grid-row:19;
@@ -137,7 +137,10 @@ background-color: hsla(150, 50%, 50%, 50);
 
 }
 
-@media only screen and (max-width:1163px) {
+@media only screen and (max-width:1200px) {
+    #header {
+        height: 125px;
+    }
     main{
         display: flex;
         flex-wrap: wrap;
@@ -160,6 +163,10 @@ background-color: hsla(150, 50%, 50%, 50);
     .reel {
         width: 30%;
     }
+    #text-box {
+        height: 190px;
+        margin-top: 3px;
+    }
 }
 
 @media only screen and (max-width:500px) {
@@ -167,12 +174,16 @@ background-color: hsla(150, 50%, 50%, 50);
         font-size: 30px;
     }
     header {
-        height: 250px;
+        height: 125px;
     }
+
 }
 
 @media only screen and (max-width:260px) {
     header h1 {
         font-size: 25px;
+    }
+    #header {
+        height: 50px;
     }
 }
