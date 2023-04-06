@@ -153,15 +153,11 @@ background-color: hsla(150, 50%, 50%, 50);
     top: 200px;
     left: 100px;
     border: 30px solid rgb(4, 102, 162);
+    color: white;
 }
 
 
-@media only screen and (max-width:1163px) {
-    html {
-    background-color: hsla(200, 20%, 70%, 50);
-}
 
-}
 
 @media only screen and (max-width:1200px) {
     #header {
@@ -193,6 +189,15 @@ background-color: hsla(150, 50%, 50%, 50);
         height: 190px;
         margin-top: 3px;
     }
+    #outcome {
+        font-size: 30px;
+    }
+    #credit-box {
+        grid-row: 10;
+    }
+    #spin-container {
+        grid-row: 10;
+    }
 }
 
 @media only screen and (max-width:500px) {
@@ -202,7 +207,21 @@ background-color: hsla(150, 50%, 50%, 50);
     header {
         height: 125px;
     }
-
+    #hidden {
+        display: none;
+        z-index: 2;
+        width: 80%;
+        height: 500px;
+        font-size: 100px;
+        position: static;
+        background-color: blue;
+        align-items: center;
+        justify-content: center;
+        top: 200px;
+       
+        border: 30px solid rgb(4, 102, 162);
+        color: white;
+    }
 }
 
 @media only screen and (max-width:260px) {

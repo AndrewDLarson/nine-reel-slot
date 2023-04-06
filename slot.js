@@ -99,9 +99,9 @@ spinButton.onclick = function() {
     };    
          
     credits -= 1;
-    const reelOneOutcome = spinReel();
-    const reelTwoOutcome = spinReel();
-    const reelThreeOutcome = spinReel();
+    const reelOneOutcome = "andy"//spinReel();
+    const reelTwoOutcome = "andy"//spinReel();
+    const reelThreeOutcome = "andy"//spinReel();
     const reelFourOutcome = spinReel();
     const reelFiveOutcome = spinReel();
     const reelSixOutcome = spinReel();
@@ -521,9 +521,9 @@ spinButton.onclick = function() {
     }
    // styling for winnings should go here
    if (reelOneOutcome === reelTwoOutcome && reelTwoOutcome === reelThreeOutcome) {
-    reelOne.style.border = "10px solid red";
-    reelTwo.style.border = "10px solid red";
-    reelThree.style.border = "10px solid red";
+    reelOne.style.border = "3px solid red";
+    reelTwo.style.border = "3px solid red";
+    reelThree.style.border = "3px solid red";
        /* setInterval(function() {
            reelOne.style.border = (reelOne.style.border == '10px solid yellow' ? '10px solid orange' : '10px solid yellow');
         }, 1);
@@ -535,9 +535,9 @@ spinButton.onclick = function() {
          }, 1);*/
         };
    if (reelFourOutcome === reelFiveOutcome && reelFiveOutcome === reelSixOutcome) {
-    reelFour.style.border = "10px solid red";
-    reelFive.style.border = "10px solid red";
-    reelSix.style.border = "10px solid red";
+    reelFour.style.border = "3px solid red";
+    reelFive.style.border = "3px solid red";
+    reelSix.style.border = "3px solid red";
     /*setInterval(function() {
         reelFour.style.border = (reelFour.style.border == '10px solid yellow' ? '10px solid orange' : '10px solid yellow');
      }, 1);
@@ -549,9 +549,9 @@ spinButton.onclick = function() {
       }, 1);*/
     };
    if (reelSevenOutcome === reelEightOutcome && reelEightOutcome === reelNineOutcome) {
-    reelSeven.style.border = "10px solid red";
-    reelEight.style.border = "10px solid red";
-    reelNine.style.border = "10px solid red";
+    reelSeven.style.border = "3px solid red";
+    reelEight.style.border = "3px solid red";
+    reelNine.style.border = "3px solid red";
     /*setInterval(function() {
         reelSeven.style.border = (reelSeven.style.border == '10px solid yellow' ? '10px solid orange' : '10px solid yellow');
      }, 1);
@@ -563,9 +563,9 @@ spinButton.onclick = function() {
       }, 1);*/
    };
    if (reelOneOutcome === reelFourOutcome && reelFourOutcome === reelSevenOutcome) {
-    reelOne.style.border = "10px solid red";
-    reelFour.style.border = "10px solid red";
-    reelSeven.style.border = "10px solid red";
+    reelOne.style.border = "3px solid red";
+    reelFour.style.border = "3px solid red";
+    reelSeven.style.border = "3px solid red";
     /*setInterval(function() {
         reelOne.style.border = (reelOne.style.border == '10px solid yellow' ? '10px solid orange' : '10px solid yellow');
      }, 1);
@@ -577,9 +577,9 @@ spinButton.onclick = function() {
       }, 1);*/
    };
    if (reelTwoOutcome === reelFiveOutcome && reelFiveOutcome === reelEightOutcome) {
-    reelTwo.style.border = "10px solid red";
-    reelFive.style.border = "10px solid red";
-    reelEight.style.border = "10px solid red";
+    reelTwo.style.border = "3px solid red";
+    reelFive.style.border = "3px solid red";
+    reelEight.style.border = "3px solid red";
     /*setInterval(function() {
         reelTwo.style.border = (reelTwo.style.border == '10px solid yellow' ? '10px solid orange' : '10px solid yellow');
      }, 1);
@@ -591,9 +591,9 @@ spinButton.onclick = function() {
       }, 1);*/
    };
    if (reelThreeOutcome === reelSixOutcome && reelSixOutcome === reelNineOutcome) {
-    reelThree.style.border = "10px solid red";
-    reelSix.style.border = "10px solid red";
-    reelNine.style.border = "10px solid red";
+    reelThree.style.border = "3px solid red";
+    reelSix.style.border = "3px solid red";
+    reelNine.style.border = "3px solid red";
     /*setInterval(function() {
         reelThree.style.border = (reelThree.style.border == '10px solid yellow' ? '10px solid orange' : '10px solid yellow');
      }, 1);
@@ -605,9 +605,9 @@ spinButton.onclick = function() {
       }, 1);*/
    };
    if (reelOneOutcome === reelFiveOutcome && reelFiveOutcome === reelNineOutcome) {
-    reelOne.style.border = "10px solid red";
-    reelFive.style.border = "10px solid red";
-    reelNine.style.border = "10px solid red";
+    reelOne.style.border = "3px solid red";
+    reelFive.style.border = "3px solid red";
+    reelNine.style.border = "3px solid red";
     /*setInterval(function() {
         reelOne.style.border = (reelOne.style.border == '10px solid yellow' ? '10px solid orange' : '10px solid yellow');
      }, 1);
@@ -619,9 +619,9 @@ spinButton.onclick = function() {
       }, 1);*/
    };
    if (reelThreeOutcome === reelFiveOutcome && reelFiveOutcome === reelSevenOutcome) {
-    reelThree.style.border = "10px solid red";
-    reelFive.style.border = "10px solid red";
-    reelSeven.style.border = "10px solid red";
+    reelThree.style.border = "3px solid red";
+    reelFive.style.border = "3px solid red";
+    reelSeven.style.border = "3px solid red";
     /*setInterval(function() {
         reelThree.style.border = (reelThree.style.border == '10px solid yellow' ? '10px solid orange' : '10px solid yellow');
      }, 1);
