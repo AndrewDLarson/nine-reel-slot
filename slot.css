@@ -9,7 +9,8 @@
 header {
     height: 100px;
     text-align: center;
-    background-color: hsla(200, 25%, 50%, 50);
+    /*background-color: hsla(200, 25%, 50%, 50);*/
+    background-color: hsla(100, 25%, 50%, 50);
 }
 
 header h1 {
@@ -28,7 +29,8 @@ main {
     grid-template-columns: 1fr 650px 1fr;
     grid-template-rows: repeat(50, 25px);
     text-align: center;
-    background-color: hsla(200, 50%, 50%, 50);
+    /*background-color: hsla(200, 50%, 50%, 50);*/
+    background-color: hsla(160, 25%, 50%, 50);
 }
 
 #text-box-container {
@@ -51,6 +53,12 @@ main {
 
 #text-box p {
     padding: 10px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#secret {
+    font-size: 30px;
 }
 
 #reel-container {
@@ -115,7 +123,8 @@ background-color: hsla(150, 50%, 50%, 50);
     border: 1px solid black;
     display: inline-block;
     font-size: 50px;
-    background-color: hsla(200, 25%, 75%, 50);
+    /*background-color: hsla(200, 25%, 75%, 50);*/
+    background-color: hsla(50, 25%, 50%, 50);
     margin-top: 5px;
 }
 
@@ -123,12 +132,29 @@ background-color: hsla(150, 50%, 50%, 50);
     border: 1px solid black;
     height: 150px;
     margin: 10px 50px;
-    background-color:  hsla(185, 50%, 50%, 50);
+    /*background-color:  hsla(185, 50%, 50%, 50);*/
+    background-color: hsla(125, 25%, 50%, 50);
 }
 
 #creditBox p {
     font-size: 30px;
 }
+
+#hidden {
+    display: none;
+    z-index: 2;
+    width: 80%;
+    height: 500px;
+    font-size: 100px;
+    position: absolute;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    top: 200px;
+    left: 100px;
+    border: 30px solid rgb(4, 102, 162);
+}
+
 
 @media only screen and (max-width:1163px) {
     html {

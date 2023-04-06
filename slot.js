@@ -632,4 +632,11 @@ spinButton.onclick = function() {
          reelSeven.style.border = (reelSeven.style.border == '10px solid yellow' ? '10px solid orange' : '10px solid yellow');
       }, 1);*/
    };
+   if (credits >= 500) {
+    document.getElementById("hidden").style.display = 'flex';
+   }
+   if (credits === 0) {
+    document.getElementById("spin-container").style.display = 'none';
+    document.getElementById("outcome").innerHTML = 'Out of Credits';
+   }
 }; 
