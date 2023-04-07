@@ -15,7 +15,7 @@ let credits = 10;
 creditsBlock.innerHTML = `${credits}`
 
 const spinReel = () => {
-   let randomNumber = Math.floor(Math.random()*7);
+   let randomNumber = Math.floor(Math.random()*9);
    switch (randomNumber) {
     case 0:
         return "andy";
@@ -38,13 +38,13 @@ const spinReel = () => {
     case 6:
         return "pizza";
         break;
-    /*case 7:
+    case 7:
         return "games";
         break;
     case 8:
         return "chainsaw";
         break;
-    case 9:
+    /*case 9:
         return "fairy";
         break;*/
    }
@@ -92,6 +92,14 @@ spinButton.onclick = function() {
                     win += 20;
                     credits += 20;
                     break;
+                case "games":
+                    win += 10;
+                    credits += 10;
+                    break;
+                case "chainsaw":
+                    win += 10;
+                    credits += 10;
+                    break;
             }
         } else {
             document.getElementById("outcome").innerHTML = "Try Again"
@@ -99,9 +107,9 @@ spinButton.onclick = function() {
     };    
          
     credits -= 1;
-    const reelOneOutcome = "andy"//spinReel();
-    const reelTwoOutcome = "andy"//spinReel();
-    const reelThreeOutcome = "andy"//spinReel();
+    const reelOneOutcome = spinReel();
+    const reelTwoOutcome = spinReel();
+    const reelThreeOutcome = spinReel();
     const reelFourOutcome = spinReel();
     const reelFiveOutcome = spinReel();
     const reelSixOutcome = spinReel();
@@ -141,15 +149,15 @@ spinButton.onclick = function() {
                 reelOne.innerHTML = '<img id="pizzaPic1" src="./pizza.jpg">';
                 document.getElementById("pizzaPic1").style.width = "100%";
                 break;
-            /*case "games":
-                reelOne.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+            case "games":
+                reelOne.innerHTML = '<img id="gamesPic1" src="./games.jpg">';
+                document.getElementById("gamesPic1").style.width = "100%";
                 break;
             case "chainsaw":
-                reelOne.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+                reelOne.innerHTML = '<img id="chainsawPic1" src="./chainsaw.jpg">';
+                document.getElementById("chainsawPic1").style.width = "100%";
                 break;
-            case "fairy":
+            /*case "fairy":
                 reelOne.innerHTML = '<img src="./andy.jpg">';
                 document.getElementById("kellyPic").style.width = "100%";
                 break;*/
@@ -185,15 +193,15 @@ spinButton.onclick = function() {
                 reelTwo.innerHTML = '<img id="pizzaPic2" src="./pizza.jpg">';
                 document.getElementById("pizzaPic2").style.width = "100%";
                 break;
-            /*case "games":
-                reelTwo.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+            case "games":
+                reelTwo.innerHTML = '<img id="gamesPic2" src="./games.jpg">';
+                document.getElementById("gamesPic2").style.width = "100%";
                 break;
             case "chainsaw":
-                reelTwo.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+                reelTwo.innerHTML = '<img id="chainsawPic2" src="./chainsaw.jpg">';
+                document.getElementById("chainsawPic2").style.width = "100%";
                 break;
-            case "fairy":
+            /*case "fairy":
                 reelTwo.innerHTML = '<img src="./andy.jpg">';
                 document.getElementById("kellyPic").style.width = "100%";
                 break;*/
@@ -229,15 +237,15 @@ spinButton.onclick = function() {
                 reelThree.innerHTML = '<img id="pizzaPic3" src="./pizza.jpg">';
                 document.getElementById("pizzaPic3").style.width = "100%";
                 break;
-            /*case "games":
-                reelThree.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+            case "games":
+                reelThree.innerHTML = '<img id="gamesPic3" src="./games.jpg">';
+                document.getElementById("gamesPic3").style.width = "100%";
                 break;
             case "chainsaw":
-                reelThree.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+                reelThree.innerHTML = '<img id="chainsawPic3" src="./chainsaw.jpg">';
+                document.getElementById("chainsawPic3").style.width = "100%";
                 break;
-            case "fairy":
+            /*case "fairy":
                 reelThree.innerHTML = '<img src="./andy.jpg">';
                 document.getElementById("kellyPic").style.width = "100%";
                 break;*/
@@ -272,15 +280,15 @@ spinButton.onclick = function() {
                 reelFour.innerHTML = '<img id="pizzaPic4" src="./pizza.jpg">';
                 document.getElementById("pizzaPic4").style.width = "100%";
                 break;
-            /*case "games":
-                reelFour.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+            case "games":
+                reelFour.innerHTML = '<img id="gamesPic4" src="./games.jpg">';
+                document.getElementById("gamesPic4").style.width = "100%";
                 break;
             case "chainsaw":
-                reelFour.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+                reelFour.innerHTML = '<img id="chainsawPic4" src="./chainsaw.jpg">';
+                document.getElementById("chainsawPic4").style.width = "100%";
                 break;
-            case "fairy":
+            /*case "fairy":
                 reelFour.innerHTML = '<img src="./andy.jpg">';
                 document.getElementById("kellyPic").style.width = "100%";
                 break;*/
@@ -315,15 +323,15 @@ spinButton.onclick = function() {
                 reelFive.innerHTML = '<img id="pizzaPic5" src="./pizza.jpg">';
                 document.getElementById("pizzaPic5").style.width = "100%";
                 break;
-            /*case "games":
-                reelFive.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+            case "games":
+                reelFive.innerHTML = '<img id="gamesPic5" src="./games.jpg">';
+                document.getElementById("gamesPic5").style.width = "100%";
                 break;
             case "chainsaw":
-                reelFive.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+                reelFive.innerHTML = '<img id="chainsawPic5" src="./chainsaw.jpg">';
+                document.getElementById("chainsawPic5").style.width = "100%";
                 break;
-            case "fairy":
+            /*case "fairy":
                 reelFive.innerHTML = '<img src="./andy.jpg">';
                 document.getElementById("kellyPic").style.width = "100%";
                 break;*/
@@ -358,15 +366,15 @@ spinButton.onclick = function() {
                 reelSix.innerHTML = '<img id="pizzaPic6" src="./pizza.jpg">';
                 document.getElementById("pizzaPic6").style.width = "100%";
                 break;
-            /*case "games":
-                reelSix.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+            case "games":
+                reelSix.innerHTML = '<img id="gamesPic6" src="./games.jpg">';
+                document.getElementById("gamesPic6").style.width = "100%";
                 break;
             case "chainsaw":
-                reelSix.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+                reelSix.innerHTML = '<img id="chainsawPic6" src="./chainsaw.jpg">';
+                document.getElementById("chainsawPic6").style.width = "100%";
                 break;
-            case "fairy":
+            /*case "fairy":
                 reelSix.innerHTML = '<img src="./andy.jpg">';
                 document.getElementById("kellyPic").style.width = "100%";
                 break;*/
@@ -401,15 +409,15 @@ spinButton.onclick = function() {
                 reelSeven.innerHTML = '<img id="pizzaPic7" src="./pizza.jpg">';
                 document.getElementById("pizzaPic7").style.width = "100%";
                 break;
-            /*case "games":
-                reelSeven.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+            case "games":
+                reelSeven.innerHTML = '<img id="gamesPic7" src="./games.jpg">';
+                document.getElementById("gamesPic7").style.width = "100%";
                 break;
             case "chainsaw":
-                reelSeven.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+                reelSeven.innerHTML = '<img id="chainsawPic7" src="./chainsaw.jpg">';
+                document.getElementById("chainsawPic7").style.width = "100%";
                 break;
-            case "fairy":
+            /*case "fairy":
                 reelSeven.innerHTML = '<img src="./andy.jpg">';
                 document.getElementById("kellyPic").style.width = "100%";
                 break;*/
@@ -444,15 +452,15 @@ spinButton.onclick = function() {
                 reelEight.innerHTML = '<img id="pizzaPic8" src="./pizza.jpg">';
                 document.getElementById("pizzaPic8").style.width = "100%";
                 break;
-            /*case "games":
-                reelEight.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+            case "games":
+                reel.Eight.innerHTML = '<img id="gamesPic8" src="./games.jpg">';
+                document.getElementById("gamesPic8").style.width = "100%";
                 break;
             case "chainsaw":
-                reelEight.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+                reelEight.innerHTML = '<img id="chainsawPic8" src="./chainsaw.jpg">';
+                document.getElementById("chainsawPic8").style.width = "100%";
                 break;
-            case "fairy":
+            /*case "fairy":
                 reelEight.innerHTML = '<img src="./andy.jpg">';
                 document.getElementById("kellyPic").style.width = "100%";
                 break;*/
@@ -487,15 +495,15 @@ spinButton.onclick = function() {
                 reelNine.innerHTML = '<img id="pizzaPic9" src="./pizza.jpg">';
                 document.getElementById("pizzaPic9").style.width = "100%";
                 break;
-            /*case "games":
-                reelNine.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+            case "games":
+                reelOne.innerHTML = '<img id="gamesPic" src="./games.jpg">';
+                document.getElementById("gamesPic").style.width = "100%";
                 break;
             case "chainsaw":
-                reelNine.innerHTML = '<img src="./andy.jpg">';
-                document.getElementById("kellyPic").style.width = "100%";
+                reelOne.innerHTML = '<img id="chainsawPic" src="./chainsaw.jpg">';
+                document.getElementById("chainsawPic").style.width = "100%";
                 break;
-            case "fairy":
+            /*case "fairy":
                 reelNine.innerHTML = '<img src="./andy.jpg">';
                 document.getElementById("kellyPic").style.width = "100%";
                 break;*/
