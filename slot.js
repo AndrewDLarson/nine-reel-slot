@@ -65,40 +65,40 @@ spinButton.onclick = function() {
         if (slotOne === slotTwo && slotTwo === slotThree) {
             switch (slotOne) {
                 case "andy":
-                    win += 100;
-                    credits += 100;
-                    break;
-                case "kelly":
                     win += 75;
                     credits += 75;
                     break;
-                case "ryder":
+                case "kelly":
                     win += 50;
                     credits += 50;
                     break;
+                case "ryder":
+                    win += 25;
+                    credits += 25;
+                    break;
                 case "new baby":
-                    win += 50; 
-                    credits += 50;
+                    win += 25; 
+                    credits += 25;
                     break;
                 case "nala":
-                    win += 25;
-                    credits += 25;
+                    win += 10;
+                    credits += 10;
                     break;
                 case "mufasa":
-                    win += 25;
-                    credits += 25;
+                    win += 10;
+                    credits += 10;
                     break;
                 case "pizza":
-                    win += 20;
-                    credits += 20;
+                    win += 5;
+                    credits += 5;
                     break;
                 case "games":
-                    win += 10;
-                    credits += 10;
+                    win += 5;
+                    credits += 5;
                     break;
                 case "chainsaw":
-                    win += 10;
-                    credits += 10;
+                    win += 5;
+                    credits += 5;
                     break;
                     case "fairy":
                     win += 5;
@@ -500,11 +500,11 @@ spinButton.onclick = function() {
                 document.getElementById("pizzaPic9").style.width = "100%";
                 break;
             case "games":
-                reelOne.innerHTML = '<img id="gamesPic" src="./games.jpg">';
+                reelNine.innerHTML = '<img id="gamesPic" src="./games.jpg">';
                 document.getElementById("gamesPic").style.width = "100%";
                 break;
             case "chainsaw":
-                reelOne.innerHTML = '<img id="chainsawPic" src="./chainsaw.jpg">';
+                reelNine.innerHTML = '<img id="chainsawPic" src="./chainsaw.jpg">';
                 document.getElementById("chainsawPic").style.width = "100%";
                 break;
             case "fairy":
