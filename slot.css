@@ -102,8 +102,11 @@ background-color: hsla(150, 50%, 50%, 50);
 }
 
 #spin:active {
-    margin-top: 10px;
-    margin-left: 5px;
+   /* margin-top: 10px;
+    margin-left: 5px;*/
+    position: relative;
+    top: 10px;
+    left: 5px;
     box-shadow: none;
 }
 
