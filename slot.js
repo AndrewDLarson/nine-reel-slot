@@ -65,36 +65,36 @@ spinButton.onclick = function() {
         if (slotOne === slotTwo && slotTwo === slotThree) {
             switch (slotOne) {
                 case "andy":
+                    win += 100;
+                    credits += 100;
+                    break;
+                case "kelly":
                     win += 75;
                     credits += 75;
                     break;
-                case "kelly":
+                case "ryder":
                     win += 50;
                     credits += 50;
                     break;
-                case "ryder":
+                case "new baby":
+                    win += 50; 
+                    credits += 50;
+                    break;
+                case "nala":
                     win += 25;
                     credits += 25;
                     break;
-                case "new baby":
-                    win += 25; 
+                case "mufasa":
+                    win += 25;
                     credits += 25;
                     break;
-                case "nala":
-                    win += 10;
-                    credits += 10;
-                    break;
-                case "mufasa":
-                    win += 10;
-                    credits += 10;
-                    break;
                 case "pizza":
-                    win += 5;
-                    credits += 5;
+                    win += 10;
+                    credits += 10;
                     break;
                 case "games":
-                    win += 5;
-                    credits += 5;
+                    win += 10;
+                    credits += 10;
                     break;
                 case "chainsaw":
                     win += 5;
@@ -645,7 +645,7 @@ spinButton.onclick = function() {
       }, 1);*/
    };
    if (credits >= 500) {
-    document.getElementById("hidden").style.display = 'flex';
+    document.getElementById("hidden75").style.display = 'flex';
    }
    if (credits === 0) {
     document.getElementById("spin-container").style.display = 'none';
